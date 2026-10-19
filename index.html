@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090914">
+  <title>حديقة الأحلام 🌸</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="stars" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="eyebrow">A MAGICAL LITTLE GARDEN</div>
+    <h1>حديقة الأحلام</h1>
+    <p class="subtitle">ازرع وردة، ودع الجمال ينمو ✨</p>
+
+    <div class="counter">
+      <span>🌷</span>
+      الورود المزروعة:
+      <strong id="flowerCount">0</strong>
+    </div>
+  </header>
+
+  <main id="garden" aria-label="اضغط لزراعة الورود">
+    <div class="ground"></div>
+  </main>
+
+  <div class="hint" id="hint">
+    المس أي مكان في الحديقة لزراعة وردة 🌱
+  </div>
+
+  <section id="message" class="message" role="dialog"
+           aria-modal="true" aria-labelledby="messageTitle"
+           aria-hidden="true">
+    <div class="message-flower">🌸</div>
+    <h2 id="messageTitle">كل وردة هنا هي غفورات</h2>
+    <p>خمس وردات، ورسالة صغيرة مليئة بالجمال 💗</p>
+    <button id="continueButton" type="button">
+      متابعة زراعة الورود
+    </button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
